@@ -1,12 +1,15 @@
-a.kelvin@alustudent.com,Foundations,3.56
-b.johnson@alustudent.com,Foundations,4.0
-b.johnson@alustudent.com,Introduction to Linux,4.0
-c.mwangi@alustudent.com,Foundations,2.75
-d.kimani@alustudent.com,Introduction to Databases,3.5
-e.ngugi@alustudent.com,Foundations,3.9
-f.oduor@alustudent.com,Introduction to Linux,3.8
-g.otieno@alustudent.com,Introduction to Databases,4.0
-h.mutua@alustudent.com,Foundations,2.6
-i.mugisha@alustudent.com,Introduction to Linux,3.95
-i.mugisha@alustudent.com,Foundations,0.4
-i.mugisha@alustudent.com,Introduction to Databases,4.0
+b.uteramaho@alustudent.com,Foundations,3.56
+b.uteramaho@alustudent.com,Introduction to Linux,3.96
+justine@alustudent.com,Foundations,4.0
+justine@alustudent.com,Introduction to Linux,3.96
+milkakeza@alustudent.com,Foundations,2.4
+u@alustudent.com,Foundations,4.0
+u@alustudent.com,Introduction to Linux,4.0
+alice@alustudent.com,Foundations,0.0
+alice@alustudent.com,Introduction to Databases,0.8
+a@alustudent.com,Foundations,0.0
+a@alustudent.com,Introduction to Databases,4.0
+u@alustudent.com,Introduction to Linux,0.0
+b.uteramaho@alustudent.com,Introduction to Databases,0.0
+divine@alustudent.com,Introduction to Web Development,3.8
+k@alustudent.com,Foundations,3.3
