@@ -249,9 +249,11 @@ def main():
 
         elif choice == '4':
             ranking = grade_book.calculate_ranking()
-            print("\nRanking:")
+            number = 1
+            print(f"\n----------{ORANGE}Ranking{RESET}-------------\n")
             for names, GPA in ranking:
-                print(f"{names}: {GPA:.2f}")
+                print(f"{number}.{names}: {GPA:.2f}\n")
+                number += 1
 
         elif choice == '5':
             while True:
