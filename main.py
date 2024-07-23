@@ -357,10 +357,6 @@ def main():
                 
                 for course, grade in transcript['courses']:
                     grade_str = f"{grade:.2f}"
-                    if grade < 2.0:
-                        grade_str = f"\033[0m{grade_str}\033[0m"
-                    elif 2.0 <= grade < 3.0:
-                        grade_str = f"\033[93m{grade_str}\033[0m"
                     print(f"{course:<{max_name_length}} | {grade_str:<{max_grade_length}}")
                     print("-"* (max_name_length + max_grade_length + 3))
             
