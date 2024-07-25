@@ -6,14 +6,15 @@ import time
 import os
 
 
-
-
+# ANSI coloration
 ORANGE = "\033[38;5;208m"
 RESET = "\033[0m"
 
+# clear the screen function
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+# print the animated title with colors and sleep
 def print_animated_title():
     clear_screen()
     title = f"""{ORANGE}
@@ -37,6 +38,7 @@ def print_animated_title():
         time.sleep(0.05)
     time.sleep(0.5)
 
+# print the fancy menu with colors and sleep
 def print_fancy_menu():
     menu = [
         "1. Add Student",
@@ -58,6 +60,7 @@ def print_fancy_menu():
     
     print("=" * 40)
 
+# main function
 def main():
     grade_book = GradeBook()
     print_animated_title()
@@ -67,7 +70,7 @@ def main():
 
         choice = input("\nEnter your choice: ")
 
-
+        # Add Student
         if choice == '1':
             while True:
                 email = input("\nEnter student's email:")
@@ -123,6 +126,7 @@ def main():
             id = f"ALU{full_id}{year}"
             grade_book.add_student(email, names, id)
 
+        # Add Course
         elif choice == '2':
             while True:
                 name = input("Enter course name: ")
@@ -168,6 +172,7 @@ def main():
                     break
             grade_book.add_course(name, trimester, credits)
 
+        # Register Student for Course
         elif choice == '3':
             while True:
                 student_email = input("Enter student's email: ")
@@ -247,6 +252,7 @@ def main():
                 
             grade_book.register_student_for_course(student_email, course_name_input, normalized_grade)
 
+        # Calculate Ranking
         elif choice == '4':
             ranking = grade_book.calculate_ranking()
             number = 1
@@ -310,6 +316,7 @@ def main():
             for names, grade in results:
                 print(f"{names}: {grade}")
 
+        # Generate Transcript
         elif choice == '6':
             while True:
                 student_email = input("Enter student's email: ")
@@ -402,6 +409,7 @@ def main():
             else:
                 print("Student not found!")
 
+        # Exit
         elif choice == '7':
             break
 

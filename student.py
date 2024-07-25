@@ -1,6 +1,4 @@
-#!/usr/bin/python3
-
-
+# Student class
 class Student:
     def __init__(self, email, names, id):
         self.email = email
